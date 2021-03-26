@@ -35,6 +35,3 @@ app.post('/login',verify)
 app.post('/register', register)
 app.get('/home', (req, res) =>console.log("this is home"))
 app.listen(port,()=>{console.log("server is running on port " + port)})
-
-
-const plainTextPSWD = "abcde"
