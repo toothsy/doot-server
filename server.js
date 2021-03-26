@@ -1,5 +1,4 @@
 const express = require('express');
-const cors = require('cors');
 const app = express();
 let userData = [
     {
@@ -26,7 +25,6 @@ const register = (req, res) =>{
     res.status(200).send(true)
 }        
 const port = 5000  ||  process.env.PORT;
-app.use(cors())
 app.use(express.json({ extended: false }) );
 app.post('/login',verify)
 app.post('/register', register)
