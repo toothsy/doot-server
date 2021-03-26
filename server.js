@@ -33,7 +33,7 @@ app.use(cors())
 app.use(express.json({ extended: false }) );
 app.post('/login',verify)
 app.post('/register', register)
-app.get('/home', (req, res) =>console.log("this is home"))
+app.get('/', (req, res) =>res.send("prolly not suposed to see this"))
 app.listen(port,()=>{console.log("server is running on port " + port)})
 
 
