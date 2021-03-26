@@ -24,7 +24,7 @@ const register = (req, res) =>{
     console.log(userData)
     res.status(200).send(true)
 }        
-const port = 5000  ||  process.env.PORT;
+const port =  process.env.PORT|| 5000 ;
 app.use(express.json({ extended: false }) );
 app.post('/login',verify)
 app.post('/register', register)
