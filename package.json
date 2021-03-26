@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "server for is client",
   "main": "server.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode development --hot --open --port $PORT",
-    "build": "npm i -dev && webpack --mode production",
-    "heroku-postbuild": "npm build"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/toothsy/is-server.git"
@@ -19,8 +14,6 @@
   },
   "homepage": "https://github.com/toothsy/is-server#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.7"
+    "express": "^4.17.1"
   }
 }
