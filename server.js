@@ -31,15 +31,13 @@ const register = (req, res) =>{
     res.status(200).send(true)
 }     
 
-
-
 const email = (req, res) =>{
 
     let {email,subject,message} = req.body
 
     const auth = {
         auth:{
-            api_ket: "0ee89c4d07c709edbe959f3759044e1d-a09d6718-577dab70",
+            api_key: "0ee89c4d07c709edbe959f3759044e1d-a09d6718-577dab70",
             domain:"sandbox1ef2b3c7472046ec8830b6acf1818a57.mailgun.org"
         }
     }
